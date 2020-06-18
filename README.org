@@ -1,9 +1,9 @@
-#+TITLE: README
+* README
 
-This repository contains a collection of Org-mode files that provide an introduction to Zetteldeft.
+This repository contains a collection of Org-mode files that provide an introduction to Zettelorg.
 
 Clone this repository and open file =2020-01-05-2214 START HERE.org= in Emacs to get started.
-Instructions on how to install Zetteldeft are included.
+Instructions on how to install Zettelorg are included.
 
 #+begin_src
 git clone https://github.com/EFLS/zd-tutorial
@@ -12,5 +12,5 @@ git clone https://github.com/EFLS/zd-tutorial
 Comments and additions are more than welcome, via issues or pull requests.
 
 More information in
- - an [[https://www.eliasstorms.net/zetteldeft][introduction to Zetteldeft]]
- - the [[https://github.com/EFLS/zetteldeft][Zetteldeft repository]]
+ - an [[https://www.eliasstorms.net/zettelorg][introduction to Zettelorg]]
+ - the [[https://github.com/EFLS/zettelorg][Zettelorg repository]]

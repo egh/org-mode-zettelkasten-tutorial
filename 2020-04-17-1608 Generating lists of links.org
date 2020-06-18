@@ -1,19 +1,32 @@
-#+title: Generating lists of links
-# Tags #zetteldeft #zd-tutorial #zd-advanced
+* Generating lists of links               :zettelorg:tutorial:advanced:
+:PROPERTIES:
+:ID:       40c6acd3-b280-481c-b57a-2bebdb0bd314
+:END:
 
 Working with a Zettelkasten system means creating links to other notes.
 This is a crucial activity in order to create meaning and structure within your cloud of notes.
 
+#+begin_src 
+(org-add-link-type "tag" 'endless/follow-tag-link)
+
+(defun endless/follow-tag-link (tag)
+  "Display a list of TODO headlines with tag TAG.
+With prefix argument, also display headlines without a TODO keyword."
+  (org-tags-view (null current-prefix-arg) tag))
+#+end_src
+
+[[tag:zo-expansion][Optional Description]]
+
 For this purpose, it can be useful to quickly generate a list of notes with a specific search term.
-That's what =zetteldeft-insert-list-links= does.
+That's what =zettelorg-insert-list-links= does.
 It's best used in combination with =#tags=.
 
-Calling =zetteldeft-insert-list-links= prompts for a search term and will insert a list of links to the search results.
+Calling =zettelorg-insert-list-links= prompts for a search term and will insert a list of links to the search results.
 
-Sometimes, rather thang simply generating a list, I like to manually link to notes in the text, but then I wonder which notes I /haven't/ linked to yet.
+Sometimes, rather than simply generating a list, I like to manually link to notes in the text, but then I wonder which notes I /haven't/ linked to yet.
 
-That's where =zetteldeft-insert-list-links-missing= comes in.
+That's where =zettelorg-insert-list-links-missing= comes in.
 (Note, however, that once the missing notes have been linked to, they are now part of the current note, which means that calling the function again will not include those notes.)
 
 The power of =org-mode= allows us to go one step further and use source code blocks to easily update these lists.
-See §2020-04-17-1611 for details.
+See [[id:2a73c06c-ee94-4055-806f-eebd73d6b27b][Automated lists of links]] for details.

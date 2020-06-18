@@ -1,19 +1,20 @@
-#+title: Expansions HUB
+* Expansions HUB                         :zo-expansion:tutorial:zettelorg:
+:PROPERTIES:
+:ID:       a1038207-a604-4615-962b-0df6df93e4fa
+:END:
 #+startup: hideblocks
-# Tags #zd-expansion #zetteldeft #zd-tutorial
 
-The tag =#zd-expansions= collects notes with snippets of code you can use to extend your Zetteldeft setup.
+The tag =#expansions= collects notes with snippets of code you can use to extend your Zettelorg setup.
 
 #+BEGIN_SRC emacs-lisp :results silent
-(efls/zetteldeft-links "#zd-expansion")
+(efls/zettelorg-links "#zd-expansion")
 #+END_SRC
 
- - §2020-05-09-0928 Wandering to a random note
- - §2020-04-17-1611 Automated lists of links
- - §2020-03-25-0928 Integration with org-link
+ - [[id:12754d84-4cc8-45fa-85a9-c36f3de21729][Wandering to a random note]]
+ - [[id:2a73c06c-ee94-4055-806f-eebd73d6b27b][Automated lists of links]]
 
    Sat Jun  6 20:03:30 2020
 
 This list is generated semi-automatically thanks to the codeblock above.
-It relies on =zetteldeft-list-links= (see §2020-04-17-1608).
-To automate as above, take a look at §2020-04-17-1611.
+It relies on =zettelorg-list-links= (see [[id:40c6acd3-b280-481c-b57a-2bebdb0bd314][Generating lists of links]])
+To automate as above, take a look at [[id:2a73c06c-ee94-4055-806f-eebd73d6b27b][Automated lists of links]].

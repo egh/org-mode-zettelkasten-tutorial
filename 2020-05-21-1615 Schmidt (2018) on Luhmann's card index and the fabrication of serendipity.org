@@ -1,12 +1,15 @@
-#+title: Schmidt (2018) on Luhmann's card index and the fabrication of serendipity
-# Tags #literature #zetteldeft #luhmann
+* Schmidt (2018) on Luhmann's card index and the fabrication of serendipity
+:PROPERTIES:
+:ID:       15dea09e-94ae-4800-acb6-9ce10c446a4b
+:END:
+# Tags #literature #zettelorg #luhmann
 
 Schmidt, Johannes F.K. (2018). Niklas Luhmann’s Card Index: The Fabrication of Serendipity. /Sociologica/, 12 (1), 53-60. https://doi.org/10.6092/issn.1971-8853/8350
 
 Available online at
 https://sociologica.unibo.it/article/view/8350
 
-Reference used in §2020-02-07-2328 Luhmann's Zettelkasten
+Reference used in [[id:8a503f96-17b9-4b79-bfed-2355e01f9a49][Luhmann's Zettelkasten]]
 
 Schmidt coordinates a long-term research project on Luhmann's notes.
 This article (a shortened version of a previously published chapter) shares details on Luhmann's linking system.

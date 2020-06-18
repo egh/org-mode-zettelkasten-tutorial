@@ -1,62 +1,37 @@
-#+title: START HERE
-# Tags #zd-tutorial #zetteldeft
+* Start here                                         :zd:tutorial:zettelorg:
+:PROPERTIES:
+:ID:       b9c8bf44-3980-4026-8737-cc546a166d31
+:END:
+This is a tutorial for a zettelkasten system based on pure org mode.
 
-This is a tutorial for Zetteldeft, a Zettelkasten system on top of Deft.
-
-This file guides you through a Zetteldeft installation and basic setup.
-
-If you use MELPA and =use-package=, installing is as easy as:
-
+This file guides you through a Zettlelkasten setup.
 #+begin_src emacs-lisp :results silent
-(use-package deft
-  :ensure t
-  :init
-    (setq deft-extensions '("org" "md" "txt")
-          deft-use-filename-as-title t))
+(setq org-id-link-to-org-use-id t)
+(org-link-set-parameters "id" :complete #'org-id-complete-link)
+  (org-link-set-parameters "id" :store #'org-id-store-link)
 
-(use-package zetteldeft
-  :ensure t
-  :after deft
-  :config (zetteldeft-set-classic-keybindings))
-#+end_src
+  (defun org-id-complete-link ()
+    "Create an id: link using completion."
+    (concat "id:" (org-id-get-with-outline-path-completion org-refile-targets)))
 
-Hit =C-c C-c= in the code block above to execute the code.
+  (require 'find-lisp)
+  (setq org-agenda-text-search-extra-files
+        (append org-agenda-text-search-extra-files
+                (find-lisp-find-files default-directory ".org")))
+  (setq org-id-extra-files org-agenda-text-search-extra-files) ;; bug
+  (add-to-list 'org-refile-targets '(org-agenda-text-search-extra-files :maxlevel . 2))
+  #+end_src
 
-This will set up default keybindings behind the =C-c d= prefix.
-If you use =evil= and =leader.el=, you might prefer different bindings (see §2020-02-15-1508).
-For installation on spacemacs, see §2020-04-18-1304.
+M-x org-id-update-id-locations
 
-Next, we need configure some settings.
-
-Point =deft-dir= to the tutorial files (i.e., the current directory)
-and tell Deft to refresh:
-
-#+begin_src emacs-lisp :results silent
-(setq deft-directory default-directory)
-
-(deft)
-(deft-refresh)
-#+end_src
-
-Make sure you use the default configuration.
-If you already use Zetteldeft and have a personal config, override it with the code below.
-
-#+begin_src emacs-lisp :results silent
-(setq zetteldeft-link-indicator "§"
-      zetteldeft-id-format "%Y-%m-%d-%H%M"
-      zetteldeft-id-regex "[0-9]\\{4\\}\\(-[0-9]\\{2,\\}\\)\\{3\\}"
-      zetteldeft-tag-regex "[#@][a-z-]+")
-#+end_src
-
-Finally, I advise to enable =visual-line-mode= so that long lines are wrapped at the window's edges.
-I use it to write these notes, so you'll need it to read them.
+Finally, I advise to enable =visual-line-mode= so that long lines are wrapped at the window's edges. I use it to write these notes, so you'll need it to read them.
 
 #+begin_src emacs-lisp :results silent
 (visual-line-mode t)
 #+end_src
 
-For a better reading experience I advise =writeroom-mode=, but this is not strictly necessary.
+For a better reading experience I advise =olivetti-mode=, but this is not strictly necessary.
 
-Now you are ready to move to note §2020-02-15-1247.
+Now you are ready to move to note [[id:5fd0aee9-99dd-462d-844b-271939c96a43][Welcome]]
 
-Hit =M-x zetteldeft-follow-link= or =C-c d f=, and pick a link to follow.
+Hit =C-c C-o= over the link. If you use =ace-link= or similar, use that.

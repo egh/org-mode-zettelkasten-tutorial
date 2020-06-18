@@ -1,11 +1,11 @@
-#+title: Wandering to a random note
-# Tags #zd-expansion #zetteldeft #zd-tutorial
-
-Backlink: §2020-04-17-1605 Expansions HUB
+* Wandering to a random note             :tutorial:expansion:zettelorg:
+:PROPERTIES:
+:ID:       12754d84-4cc8-45fa-85a9-c36f3de21729
+:END:
 
 Sometimes it's nice to wander.
 
-The following feature was [[https://github.com/EFLS/zetteldeft/issues/53][suggested by erictleung]].
+The following feature was [[https://github.com/EFLS/zettelorg/issues/53][suggested by erictleung]].
 
 #+begin_quote
 In using =org-brain=, I really liked its wander feature, which brings a note randomly.
@@ -16,22 +16,20 @@ From there you can edit it with current knowledge or link it to other notes.
 
 He proposed a function to do so, which is edited and shared below.
 
-It will pop open the deft buffer, pick a random zetteldeft ID, and enter it as a search string.
+It will pop open the deft buffer, pick a random zettelorg ID, and enter it as a search string.
 
 #+begin_src emacs-lisp :results silent
-(defun zetteldeft-wander ()
-  "Wander through `zetteldeft' notes.
-Search `deft' for a random `zetteldeft' id."
-  (interactive)
-  (switch-to-buffer deft-buffer)
-  (let ((all-files (deft-find-all-files-no-prefix)))
-    (deft-filter
-      (zetteldeft--lift-id
-        (nth (random (length all-files))
-           all-files)))))
+(defun zettelorg-wander ()
+    "Wander through `zettelorg' notes."
+    (interactive)
+    (let* ((ids (hash-table-keys org-id-locations))
+           (size (length ids))
+           (index (random size))
+           (id (nth index ids)))
+      (org-id-goto id)))
 #+end_src
 
-Make sure Deft is loaded (with =C-c d d=), and then run =zetteldeft-wander=.
+Try running =M-x zettelorg-wander=.
 It will retreive a random file from the Deft list of files, and search for its ID.
 
 One potential issue: when there are Deft notes without an ID, the search term will be =nil=.

@@ -1,14 +1,15 @@
-#+title: Luhmann's Zettelkasten
-# Tags #luhmann #zetteldeft
-
-Backlink §2020-02-14-2240 Zetteldeft history
+* Luhmann's Zettelkasten
+:PROPERTIES:
+:ID:       8a503f96-17b9-4b79-bfed-2355e01f9a49
+:END:
+# Tags #luhmann #zettelorg
 
 The notes below are very much work in progress.
 
 German sociologist Niklas Luhmann is the original Zettelkasten thinker and tinkerer.
 He used an intricate system of naming paper notes and making links between them, long before Personal Computers appeared.
 
-Johannes F.K. Schmidt (2018, §2020-05-21-1615) is studying Luhmanns' second iteration of his Zettelkasten.
+[[id:15dea09e-94ae-4800-acb6-9ce10c446a4b][Johannes F.K. Schmidt (2018)]] is studying Luhmanns' second iteration of his Zettelkasten.
 He explains that it "consists of approximately 67,000 cards, including a sizeable but obviously incomplete bibliographical apparatus with roughly 15,000 references and a keyword index with 3,200 entries."
 
 Luhmann worked on, with and in his system from 1963 until his death in 1997.
@@ -32,9 +33,23 @@ It is important to pay more attention to the /physical/ characteristic that is L
 To us contemporary readers, a "link" is an evident concept, albeit invisible.
 You can click on a link and it leads you to a destination, but you don't get to see the link id itself.
 
-With physical notes, this link ID needs to be read and "manually" followed, which in turn requires the Zettelkasten user to perform specific tasks that are forgotten in any digital system.
-(See §2020-02-07-2349 about Zettelkasten on paper)
+With physical notes, this link ID needs to be read and "manually" followed, which in turn requires the Zettelkasten user to perform specific tasks that are forgotten in any digital system. (See [[id:2f793f59-8d32-4b8c-857d-1ff9de858f5c][Zettelkasten on paper]])
 
 Each note could link to others, but received itself a number to point out where it sprouted.
 A note going from =1= to =2= simply adds more information to its idea, but by adding an =a= and writing =1a= on a new slip of paper, it could branch out.
 The result is an intricate system of interlinked notes.
+** Exercise Zettelkasten on paper
+:PROPERTIES:
+:ID:       2f793f59-8d32-4b8c-857d-1ff9de858f5c
+:END:
+# Tags #zettelorg
+
+I encourage everyone who tries to implement a Zettelkasten type of note taking system to do the following exercise, a way to get a different feel of it.
+
+1. Take a small notepad, preferably with disposable pages
+2. Number the first 20 pages
+3. Title page 1 "Overview"
+4. Start writing todo's & notes on the subsequent pages
+5. Each time you add a note, add a link to your "Overview" on page 1
+
+Of course this is not a Zettelkasten system, but an exercise like this underscores both how easy it is to get started with a note-taking system like this, and how powerful such a plain approach is.

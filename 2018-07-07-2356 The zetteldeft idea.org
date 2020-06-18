@@ -1,10 +1,11 @@
-#+title: The zetteldeft idea
-# Tags: #zetteldeft
-# Back link §2020-02-15-1247
+* The zettelorg idea                                              :zettelorg:
+:PROPERTIES:
+:ID:       1f96e72a-9ba5-4b24-b191-120b80b38992
+:END:
 
-Starting from =deft=, a Zettelkasten system needs:
+Starting from =org-mode=, a Zettelkasten system needs:
  - links between notes that are easy to make and easy to follow
- - a system for =#tags= and a way to generate an index
+ - a system for =tags= and a way to generate an index
 
 What would be handy:
  - auto completion for links to other notes
