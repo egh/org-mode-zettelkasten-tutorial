@@ -22,3 +22,7 @@ Take a look at the [[id:a1038207-a604-4615-962b-0df6df93e4fa][Zettelorg expansio
   (let ((org-agenda-files (append org-agenda-files org-agenda-text-search-extra-files)))
     (org-agenda arg org-keys restriction)))
 #+end_src
+
+#+begin_src emacs-lisp
+(setq org-complete-tags-always-offer-all-agenda-tags t)
+#+end_src
