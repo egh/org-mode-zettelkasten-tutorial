@@ -2,7 +2,6 @@
 :PROPERTIES:
 :ID:       16a2419a-9838-44ae-abca-c385cb1f8db5
 :END:
-#+startup: hideblocks
 
 There's more advanced features to explore!
 
@@ -23,6 +22,7 @@ Take a look at the [[id:a1038207-a604-4615-962b-0df6df93e4fa][Zettelorg expansio
     (org-agenda arg org-keys restriction)))
 #+end_src
 
+To ensure that tag completion includes all possible tags, set:
 #+begin_src emacs-lisp
 (setq org-complete-tags-always-offer-all-agenda-tags t)
 #+end_src
