@@ -1,4 +1,4 @@
-* Welcome                                             :zo:tutorial:zettelorg:
+* Welcome                                             :tutorial:zettelorg:
 :PROPERTIES:
 :ID:       5fd0aee9-99dd-462d-844b-271939c96a43
 :END:
