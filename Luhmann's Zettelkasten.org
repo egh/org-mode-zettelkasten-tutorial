@@ -1,8 +1,7 @@
-* Luhmann's Zettelkasten
+* Luhmann's Zettelkasten                                  :luhmann:zettelorg:
 :PROPERTIES:
 :ID:       8a503f96-17b9-4b79-bfed-2355e01f9a49
 :END:
-# Tags #luhmann #zettelorg
 
 The notes below are very much work in progress.
 
@@ -42,7 +41,6 @@ The result is an intricate system of interlinked notes.
 :PROPERTIES:
 :ID:       2f793f59-8d32-4b8c-857d-1ff9de858f5c
 :END:
-# Tags #zettelorg
 
 I encourage everyone who tries to implement a Zettelkasten type of note taking system to do the following exercise, a way to get a different feel of it.
 

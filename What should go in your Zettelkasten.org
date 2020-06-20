@@ -1,8 +1,7 @@
-* What should go in your Zettelkasten
+* What should go in your Zettelkasten            :tutorial:zettelorg:zk:todo:
 :PROPERTIES:
 :ID:       6f179296-97a8-4dd2-b7bc-f14beb744538
 :END:
-# Tags #zo-tutorial #zettelorg #zk #todo
 
 A common and recurring question is: What should I keep in my Zettelkasten?[fn:zkd] Should I include any and all pieces of information, including bank statements and things to do?
 
