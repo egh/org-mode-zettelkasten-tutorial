@@ -19,7 +19,7 @@ He proposed a function to do so, which is edited and shared below.
 It will pop open the deft buffer, pick a random zettelorg ID, and enter it as a search string.
 
 #+begin_src emacs-lisp :results silent
-(defun zettelorg-wander ()
+(defun zorg-wander ()
     "Wander through `zettelorg' notes."
     (interactive)
     (let* ((ids (hash-table-keys org-id-locations))
