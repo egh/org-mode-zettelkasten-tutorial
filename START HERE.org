@@ -8,18 +8,17 @@ This file guides you through a Zettlelkasten setup.
 #+begin_src emacs-lisp :results silent
 (setq org-id-link-to-org-use-id t)
 (org-link-set-parameters "id" :complete #'org-id-complete-link)
-  (org-link-set-parameters "id" :store #'org-id-store-link)
+(org-link-set-parameters "id" :store #'org-id-store-link)
 
-  (defun org-id-complete-link ()
-    "Create an id: link using completion."
-    (concat "id:" (org-id-get-with-outline-path-completion org-refile-targets)))
+(defun org-id-complete-link ()
+  "Create an id: link using completion."
+  (concat "id:" (org-id-get-with-outline-path-completion org-refile-targets)))
 
-  (require 'find-lisp)
-  (setq org-agenda-text-search-extra-files
-        (append org-agenda-text-search-extra-files
-                (find-lisp-find-files default-directory ".org")))
-  (setq org-id-extra-files org-agenda-text-search-extra-files) ;; bug
-  (add-to-list 'org-refile-targets '(org-agenda-text-search-extra-files :maxlevel . 2))
+(require 'find-lisp)
+(setq org-agenda-files
+      (append org-agenda-files
+              (find-lisp-find-files default-directory ".org")))
+(add-to-list 'org-refile-targets '(org-agenda-files :maxlevel . 2))
   #+end_src
 
 M-x org-id-update-id-locations
@@ -32,6 +31,4 @@ Finally, I advise to enable =visual-line-mode= so that long lines are wrapped at
 
 For a better reading experience I advise =olivetti-mode=, but this is not strictly necessary.
 
-Now you are ready to move to note [[id:5fd0aee9-99dd-462d-844b-271939c96a43][Welcome]]
-
-Hit =C-c C-o= over the link. If you use =ace-link= or similar, use that.
+Now you are ready to move to note [[id:5fd0aee9-99dd-462d-844b-271939c96a43][Welcome]]. (Hit =C-c C-o= over the link.)
