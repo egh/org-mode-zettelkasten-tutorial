@@ -16,10 +16,9 @@ This file guides you through a Zettlelkasten setup.
 
 (require 'find-lisp)
 (setq org-agenda-files
-      (append org-agenda-files
-              (find-lisp-find-files default-directory ".org")))
+      (org-uniquify (append org-agenda-files (find-lisp-find-files default-directory "\\.org"))))
 (add-to-list 'org-refile-targets '(org-agenda-files :maxlevel . 2))
-  #+end_src
+#+end_src
 
 M-x org-id-update-id-locations
 
