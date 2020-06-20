@@ -11,6 +11,8 @@ You can search for text using =M-x org-search-view=.
 
 From either of these results pages, you can use =C-c l= to store links, which you can then add to a document using =C-c C-l=. You can store multiple links, and you can insert all stored links using =C-c C-M-l=. 
 
+You can also search for test using =M-x org-occur-in-agenda-files=. This will be faster than =org-search-view= but you cannot easily extract links from it in the same way.
+
 Because all links are kept in plain text, it can be useful to search for all notes that link to the current note. You can use =org-occur-link-in-agenda-files= to search for backlinks to the current node.
 
 Unfortunately, out of the box this requires that the link description exactly match the title of the node. Here is an alternative solution that searchs for any backlink, no matter the description.
