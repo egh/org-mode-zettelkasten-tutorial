@@ -5,21 +5,27 @@
 
 Once you are familiar with the basics ([[id:a3e5b65f-b27c-460a-9cc0-e2b01de8b917][Zettelorg basic commands]]), it's time to learn some additional commands.
 
-When navigating your Zettelkasten, you might want to open a link in *another window*.
-Rather than hitting =C-c d f=, use =C-c d F= (which is =zettelorg-avy-file-search-ace-window=).
-It will split the window if you only have one window open, follow the link in the other if you have two windows, or prompt you to pick a window in which to open the destination if you have more than two.
 
-Open a Deft search for a *tag* with =C-c d t= (for =zettelorg-avy-tag-search=).
-Forgotten which tags are in use?
+You can use the standard search for a *tag* with =M-x org-agenda m=
 Generate an overview with =C-c d T= (for =zettelorg-tag-buffer=), which will create a new buffer listing all of your tags.
 
-Because all links are kept in plain text, it can be useful to use Deft to search full text for an ID.
-For example, with =C-c d c= (which calls =zettelorg-search-current-id=) you search Deft with the note ID you are currently visiting.
-This allows you to quickly identify which notes link to the *current* note.
+Because all links are kept in plain text, it can be useful to search for all notes that link to the current note. You can use =org-occur-link-in-agenda-files= to search for backlinks to the current node.
+
+Unfortunately, out of the box this requires that the link description exactly match the title of the node. Here is an alternative solution that searchs for any backlink, no matter the description.
+
+#+begin_src emacs-lisp :results silent
+(defun zorg-occur-link-in-agenda-files ()
+  "Create a link and search for it in the agendas.
+The link is not stored in `org-stored-links', it is just created
+for the search purpose."
+  (interactive)
+  (let ((link (condition-case nil
+		  (org-id-store-link)
+		(error "Unable to create a link to here"))))
+    (org-occur-in-agenda-files (regexp-quote link))))
+#+end_src
 
 Let's say you've created a note, but later want to *rename* it. Just rename it - the id should remain the same.
-
-Finally, you may want to check how many *words* your Zettelkasten contains, with =C-c d x= (or =zettelorg-count-words=).
 
 But wait, there's more!
 For some more advanced Zettelorg features, hop over to [[id:16a2419a-9838-44ae-abca-c385cb1f8db5][Advanced Zettelorg features]]

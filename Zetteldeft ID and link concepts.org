@@ -10,20 +10,5 @@ IDs are supposed to be stable and shouldn't change.
 
 Notes contain *links* to other notes. Zettelorg uses regular org links.
 
-To create a link to anothe node, use =C-c C-l=
+To create a link to another node, use =C-c C-l=
 
-You can use =org-occur-link-in-agenda-files= to search for backlinks to the current node.
-
-Unfortunately, out of the box this requires that the link description exactly match the title of the node. Here is an alternative solution that searchs for any backlink, no matter the description.
-
-#+begin_src emacs-lisp :results silent
-(defun zettelorg-occur-link-in-agenda-files ()
-  "Create a link and search for it in the agendas.
-The link is not stored in `org-stored-links', it is just created
-for the search purpose."
-  (interactive)
-  (let ((link (condition-case nil
-		  (org-id-store-link)
-		(error "Unable to create a link to here"))))
-    (org-occur-in-agenda-files (regexp-quote link))))
-#+end_src

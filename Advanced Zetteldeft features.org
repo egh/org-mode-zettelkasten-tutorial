@@ -10,3 +10,15 @@ Generate a [[id:2a73c06c-ee94-4055-806f-eebd73d6b27b][list of links for a certai
 
 Wish to further enhance your Zettelorg experience with additional code?
 Take a look at the [[id:a1038207-a604-4615-962b-0df6df93e4fa][Zettelorg expansions]]
+
+#+begin_src emacs-lisp
+(setq org-agenda-text-search-extra-files
+      (append org-agenda-text-search-extra-files
+              (find-lisp-find-files default-directory ".org")))
+(setq org-id-extra-files org-agenda-text-search-extra-files) ;; bug
+(add-to-list 'org-refile-targets '(org-agenda-text-search-extra-files :maxlevel . 2))
+(defun zorg-agenda (&optional arg org-keys restriction)
+  (interactive "P")
+  (let ((org-agenda-files (append org-agenda-files org-agenda-text-search-extra-files)))
+    (org-agenda arg org-keys restriction)))
+#+end_src
