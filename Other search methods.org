@@ -1,0 +1,49 @@
+* Other search methods.
+There are a number of different add on search methods that you can use to search your org mode files. Here are some options.
+
+** Deadgrep
+:PROPERTIES:
+:ID:       36d86a2c-8712-4a43-83fc-a6da6921983c
+:END:
+[[https://github.com/Wilfred/deadgrep][deadgrep]] uses the fast search program [[https://github.com/BurntSushi/ripgrep][ripgrep]] under the hood to quickly search a collection. Here is an example of how to store links from the search results page using deadgrep.
+
+#+begin_src emacs-lisp
+(org-link-set-parameters "id" :store '(zorg-deadgrep-id-store-link zorg-ivy-occur-id-store-link))
+(defun zorg-deadgrep-id-store-link ()
+  (if (derived-mode-p 'deadgrep-mode)
+      (save-window-excursion
+        (deadgrep-visit-result)
+        (org-id-store-link))))
+#+end_src
+
+** Counsel and ripgrep/ag/ack
+[[https://github.com/abo-abo/swiper][Counsel]] provides emacs commands using the “ivy” completion mechanism. You can use this in conjunction with ag/ripgrep/ack (search tools) to search your Zettelkasten. If you like, you can use the following code store links from your search results:
+
+#+begin_src emacs-lisp
+(org-link-set-parameters "id" :store #'zorg-ivy-occur-id-store-link)
+(defun zorg-ivy-occur-id-store-link ()
+  (if (derived-mode-p 'ivy-occur-grep-mode)
+      (save-selected-window
+        (ivy-occur-press-and-switch)
+        (org-id-store-link))))
+#+end_src
+
+Use =counsel-rg= (or equivalent for your preferred search system), enter a search term, then use =C-c C-o= to open an “occur” buffer. From there you can use =C-c l= to store links and insert them later.
+
+#+begin_src emacs-lisp
+(defvar zorg-id-store-link-functions ())
+
+(defun zorg-id-store-link ()
+  (let ((lst zorg-id-store-link-functions)
+        (result))
+    (while (and (null result)
+                (not (null lst)))
+      (setq result (funcall (car lst)))
+      (setq lst (cdr lst)))
+    result))
+
+(org-link-set-parameters "id" :store #'zorg-id-store-link)
+
+(add-to-list 'zorg-id-store-link-functions  #'zorg-ivy-occur-id-store-link)
+(add-to-list 'zorg-id-store-link-functions  #'zorg-deadgrep-id-store-link)
+#+end_src
