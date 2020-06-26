@@ -18,10 +18,8 @@ Because all links are kept in plain text, it can be useful to search for all not
 Unfortunately, out of the box this requires that the link description exactly match the title of the node. Here is an alternative solution that searchs for any backlink, no matter the description.
 
 #+begin_src emacs-lisp :results silent
-(defun zorg-occur-link-in-agenda-files ()
-  "Create a link and search for it in the agendas.
-The link is not stored in `org-stored-links', it is just created
-for the search purpose."
+(defun zorg-backlinks ()
+  "Search for backlinks to current entry."
   (interactive)
   (let ((link (condition-case nil
 		  (org-id-store-link)
