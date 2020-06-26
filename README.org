@@ -2,15 +2,10 @@
 
 This repository contains a collection of Org-mode files that provide an introduction to Zettelorg.
 
-Clone this repository and open file =2020-01-05-2214 START HERE.org= in Emacs to get started.
-Instructions on how to install Zettelorg are included.
+Clone this repository and open file =START HERE.org= in Emacs to get started.
 
 #+begin_src
-git clone https://github.com/EFLS/zd-tutorial
+git clone https://github.com/egh/zd-tutorial
 #+end_src
 
 Comments and additions are more than welcome, via issues or pull requests.
-
-More information in
- - an [[https://www.eliasstorms.net/zettelorg][introduction to Zettelorg]]
- - the [[https://github.com/EFLS/zettelorg][Zettelorg repository]]
