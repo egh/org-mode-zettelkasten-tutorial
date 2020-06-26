@@ -3,16 +3,6 @@
 :ID:       4c065f3d-7a2c-40b6-bb47-5fa2a4485f3e
 :END:
 
-Early in my PhD in sociology, I had heard stories about how Niklas Luhmann, the German social theorist known for his inscrutable systems theory, implemented a system to link tens of thousands of notes together. He turned his /Zettelkasten/ into a system that, in his words, could /talk back/ to him. (See [[id:8a503f96-17b9-4b79-bfed-2355e01f9a49][Luhmann's Zettelkasten]].)
+I am a long time Org mode user who was curious about the Zettelkasten system. There seemed to be a lot of good systems out there, but I was interested in something that conformed as closely as possible to the Org mode idioms and expectations that I was used to.
 
-Some time later -- I can't remember exactly when -- I came across [[http://zettelkasten.de][zettelkasten.de]]. At the time, Christian and Sascha were still reviewing software rather than building their own, but even then they were actively exploring the possibility of using software to implement -- or rather emulate -- Luhmann's Zettelkasten system.
-
-I didn't play around with a zettelkasten-like sytem back then, but I was inspired by their explorations. At the time, I used a variety of ways to keep notes and thoughts in order: a paper notebook, markdown notes in Ulysses and later in Atom, some notes in DEVONthink, etc.
-
-It was only after I fell into the Emacs rabbit hole sometime in 2017, that I started to dream about Zettelkasten-type of linking between my notes.
-This was no coincidence: it was precisely the openness of emacs that allowed me to experiment with some simple lines of code.
-
-Or, even better, I could simply document my attempts at extending the =deft= package.
-I looked at some basic =elisp= tutorials, spent some time looking at the =deft= code -- of which I understood only little -- and, most importantly, I stumbled upon an easy way to access =deft='s main functions programmatically (thanks to [[https://github.com/jrblevin/deft/issues/52#issuecomment-401766828][saf-dimitry]] on Github).
-I started playing around with =emacs lisp= and kept the snippets of code in a =.org= notebook.
-And all the rest is fooling around.
+When I found the [[https://github.com/EFLS/zd-tutorial][Zetteldeft tutorial]], it seemed the perfect thing to adapt to what I already knew about Org mode, to see if that was possible.
