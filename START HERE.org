@@ -2,7 +2,7 @@
 :PROPERTIES:
 :ID:       b9c8bf44-3980-4026-8737-cc546a166d31
 :END:
-This is a tutorial for a zettelkasten system based on pure Org mode.
+This is a tutorial for a Zettelkasten system based on pure Org mode.
 
 This file guides you through a Zettlelkasten setup. You can use Org mode for a Zettlelkasten system with zero additional configuration, if you like. However, I think that you will find it easier if you use the setup outlined in this file, at least.
 
@@ -12,14 +12,14 @@ First, you will need to add this directory to =org-agenda-files=. Do this by exe
 (add-to-list 'org-agenda-files default-directory)
 #+end_src
 
-The following code allows you to use =id= based links. This ensures that your links between things are stable even if you rename files or change headlines.
+The following code allows you to use =id= based links. This ensures that your links between things are stable even if you rename files or change headlines. If you already have a files in your agenda this could take some time as the id index is updated. Going forward, the index should be maintained as you add entries, so this should be a one time cost.
 
 #+begin_src emacs-lisp :results silent
 (setq org-id-link-to-org-use-id t)
 (org-id-update-id-locations)
 #+end_src
 
-Finally, I advise to enable =visual-line-mode= so that long lines are wrapped at the window's edges. I use it to write these notes, so you'll need it to read them.
+Finally, I advise enabling =visual-line-mode= so that long lines are wrapped at the window’s edges. I used it to write these notes, so you’ll need it to read them.
 
 #+begin_src emacs-lisp :results silent
 (visual-line-mode t)
