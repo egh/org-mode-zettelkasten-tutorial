@@ -11,6 +11,9 @@ Create and edit new files in your zd-tutorial directory as you usually would. Yo
 
 You can *create* a new note file with =C-x C-f= (=find-file=), or use =C-<return>= or =M-<return>= to create new headings in an existing file. If you want to set up a capture template to make this easier, you can and should.
 
-That's enough to get you started. Once you get the hang of it, take a look at [[id:8072f69e-53b1-4306-b458-1208e9468acd][more commands]] for more commands and keybindings.
+Tag entries using the usual org way, =C-c C-c= in a headline.
 
-If you prefer learning about IDs and links first, look [[id:117becf4-f5e7-4c91-8919-59d91b74a4e1][here]]
+To learn about linking between entries, click [[id:117becf4-f5e7-4c91-8919-59d91b74a4e1][here]]
+
+Once you get the hang of it, take a look at [[id:8072f69e-53b1-4306-b458-1208e9468acd][search]] for more commands and keybindings.
+
