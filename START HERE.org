@@ -2,7 +2,7 @@
 :PROPERTIES:
 :ID:       b9c8bf44-3980-4026-8737-cc546a166d31
 :END:
-This is a tutorial for a Zettelkasten system based on pure Org mode.
+This is a tutorial for a Zettelkasten system based on pure Org mode. It is based on the excellent [[https://github.com/EFLS/zd-tutorial][Zetteldeft tutorial]]. I have rewritten a lot, but the original concepts and a lot of the original text are from the guide to [[https://github.com/EFLS/zetteldeft][Zetteldeft]].
 
 This file guides you through a Zettlelkasten setup. You can use Org mode for a Zettlelkasten system with zero additional configuration, if you like. However, I think that you will find it easier if you use the setup outlined in this file, at least.
 
