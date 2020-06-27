@@ -5,7 +5,7 @@
 
 There's more advanced features to explore!
 
-Generate a [[id:2a73c06c-ee94-4055-806f-eebd73d6b27b][list of links for a certain search term]]. Or [[id:d8e80f53-4f70-42c8-a37a-c1d4a48ba240][create graphs]] with the help of =graphviz=
+Generate a [[id:2a73c06c-ee94-4055-806f-eebd73d6b27b][list of links for a certain search term]].
 
 Wish to further enhance your Zettelorg experience with additional code?
 Take a look at the [[id:a1038207-a604-4615-962b-0df6df93e4fa][Zettelorg expansions]]
