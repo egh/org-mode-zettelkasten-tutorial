@@ -5,9 +5,6 @@
 
 There's more advanced features to explore!
 
-Wish to further enhance your Zettelorg experience with additional code?
-Take a look at the [[id:a1038207-a604-4615-962b-0df6df93e4fa][Zettelorg expansions]]
-
 #+begin_src emacs-lisp
 (setq org-agenda-text-search-extra-files
       (append org-agenda-text-search-extra-files

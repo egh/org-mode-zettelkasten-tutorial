@@ -19,5 +19,3 @@ You could
  - maybe read up on [[id:4c065f3d-7a2c-40b6-bb47-5fa2a4485f3e][Zettelorg history]]
  - check out [[id:8072f69e-53b1-4306-b458-1208e9468acd][more commands]]
  - look at some [[id:16a2419a-9838-44ae-abca-c385cb1f8db5][advanced features]]
- - [[id:a1038207-a604-4615-962b-0df6df93e4fa][expand]] Zettelorg with code snippets
-
