@@ -1,11 +1,11 @@
-* More Zettelorg commands                                :zettelorg:tutorial:
+* Search                                                 :zettelorg:tutorial:
 :PROPERTIES:
 :ID:       8072f69e-53b1-4306-b458-1208e9468acd
 :END:
 
-Once you are familiar with the basics ([[id:a3e5b65f-b27c-460a-9cc0-e2b01de8b917][Zettelorg basic commands]]), it's time to learn some additional commands.
+Once you are familiar with the basics, [[id:a3e5b65f-b27c-460a-9cc0-e2b01de8b917][Zettelorg basic commands]] and [[id:117becf4-f5e7-4c91-8919-59d91b74a4e1][link concepts]], it is time to learn about search.
 
-You can use the standard search for a *tag* with =M-x org-agenda m=
+You can use the standard search for a *tag* with =M-x org-tags-view=
 
 You can search for text using =M-x org-search-view=.
 
@@ -28,6 +28,3 @@ Unfortunately, out of the box this requires that the link description exactly ma
 #+end_src
 
 Let's say you've created a note, but later want to *rename* it. Just rename it - the id should remain the same.
-
-But wait, there's more!
-For some more advanced Zettelorg features, hop over to [[id:16a2419a-9838-44ae-abca-c385cb1f8db5][Advanced Zettelorg features]]
