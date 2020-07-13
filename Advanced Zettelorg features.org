@@ -6,15 +6,20 @@
 There's more advanced features to explore!
 
 #+begin_src emacs-lisp
-(setq org-agenda-text-search-extra-files
-      (append org-agenda-text-search-extra-files
-              (find-lisp-find-files default-directory ".org")))
+(require 'find-lisp)
+(add-to-list 'org-agenda-text-search-extra-files
+              (find-lisp-find-files default-directory ".org"))
 (setq org-id-extra-files org-agenda-text-search-extra-files) ;; bug
 (add-to-list 'org-refile-targets '(org-agenda-text-search-extra-files :maxlevel . 2))
+
 (defun zorg-agenda (&optional arg org-keys restriction)
   (interactive "P")
   (let ((org-agenda-files (append org-agenda-files org-agenda-text-search-extra-files)))
     (org-agenda arg org-keys restriction)))
+
+(defun zorg-tags-view ()
+  (let ((org-agenda-files (append org-agenda-files org-agenda-text-search-extra-files)))
+    (org-tags-view)))
 #+end_src
 
 To ensure that tag completion includes all possible tags, set:
