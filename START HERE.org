@@ -17,12 +17,6 @@ The following code allows you to use =id= based links. This ensures that your li
 (org-id-update-id-locations)
 #+end_src
 
-Finally, I advise enabling =visual-line-mode= so that long lines are wrapped at the window’s edges. I used it to write these notes, so you’ll need it to read them.
-
-#+begin_src emacs-lisp :results silent
-(visual-line-mode t)
-#+end_src
-
 The one keybinding you need to know to get started, is =C-c C-o= (or =org-open-at-point=), to select links to follow.
 
 With this knowledge, you are ready to read on.
