@@ -4,16 +4,19 @@
 :END:
 This file guides you through a Zettlelkasten setup. You can use Org mode for a Zettlelkasten system with zero additional configuration, if you like. However, I think that you will find it easier if you use the setup outlined in this file, at least.
 
-First, you will need to add this directory to =org-agenda-files=. Do this by executing executing =C-c C-c= on the following source block:
+First, you will need to add this directory to =org-agenda-files-text-search-files=. (Note that this requires org 9.4 or greater to work properly.) We add to this variable, rather than =org-agenda-files=, to avoid slowing down regular agenda commands. Do this by executing executing =C-c C-c= on the following source block:
 
 #+begin_src emacs-lisp :results silent
-(add-to-list 'org-agenda-files default-directory)
+(require 'find-lisp)
+(setq org-agenda-text-search-extra-files
+      (org-uniquify (find-lisp-find-files default-directory "\\.org")))
 #+end_src
 
 The following code allows you to use =id= based links. This ensures that your links between things are stable even if you rename files or change headlines. If you already have a files in your agenda this could take some time as the id index is updated. Going forward, the index should be maintained as you add entries, so this should be a one time cost.
 
 #+begin_src emacs-lisp :results silent
 (setq org-id-link-to-org-use-id t)
+(setq org-id-extra-files 'org-agenda-text-search-extra-files)
 (org-id-update-id-locations)
 #+end_src
 
