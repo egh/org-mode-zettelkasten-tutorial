@@ -5,8 +5,6 @@
 
 To get started with Zettelorg, lets take a look at some basic commands.
 
-If you come from the "[[id:5fd0aee9-99dd-462d-844b-271939c96a43][Welcome]]" note, you already know that you can *follow links* with =C-c C-o= (or =org-open-at-point=).
-
 Create and edit new files in your zd-tutorial directory as you usually would. You can use org modes outlining features. To directly *open* one of the notes in your Zettelkasten, open a file as expected.
 
 You can *create* a new note file with =C-x C-f= (=find-file=), or use =C-<return>= or =M-<return>= to create new headings in an existing file. If you want to set up a capture template to make this easier, you can and should.

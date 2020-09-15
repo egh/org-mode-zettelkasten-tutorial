@@ -2,8 +2,6 @@
 :PROPERTIES:
 :ID:       b9c8bf44-3980-4026-8737-cc546a166d31
 :END:
-This is a tutorial for a Zettelkasten system based on pure Org mode. It is based on the excellent [[https://github.com/EFLS/zd-tutorial][Zetteldeft tutorial]]. I have rewritten a lot, but the original concepts and a lot of the original text are from the guide to [[https://github.com/EFLS/zetteldeft][Zetteldeft]].
-
 This file guides you through a Zettlelkasten setup. You can use Org mode for a Zettlelkasten system with zero additional configuration, if you like. However, I think that you will find it easier if you use the setup outlined in this file, at least.
 
 First, you will need to add this directory to =org-agenda-files=. Do this by executing executing =C-c C-c= on the following source block:
@@ -25,4 +23,12 @@ Finally, I advise enabling =visual-line-mode= so that long lines are wrapped at 
 (visual-line-mode t)
 #+end_src
 
-Now you are ready to move to note [[id:5fd0aee9-99dd-462d-844b-271939c96a43][Welcome]]. (Hit =C-c C-o= over the link.)
+The one keybinding you need to know to get started, is =C-c C-o= (or =org-open-at-point=), to select links to follow.
+
+With this knowledge, you are ready to read on.
+
+You could
+ - learn the [[id:a3e5b65f-b27c-460a-9cc0-e2b01de8b917][basic Zettelorg concepts]] 
+ - look at [[id:117becf4-f5e7-4c91-8919-59d91b74a4e1][Zettelorg ID and link concepts]]
+ - read about [[id:8072f69e-53b1-4306-b458-1208e9468acd][search]]
+ - maybe read up on [[id:4c065f3d-7a2c-40b6-bb47-5fa2a4485f3e][Zettelorg history]]
