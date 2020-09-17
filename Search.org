@@ -13,6 +13,8 @@ From either of these results pages, you can use =C-c l= to store links, which yo
 
 You can also search for test using =M-x org-occur-in-agenda-files=. This will be faster than =org-search-view= but you cannot easily extract links from it in the same way.
 
+Let's say you've created a note, but later want to *rename* it. Just rename it - the id should remain the same.
+
 Because all links are kept in plain text, it can be useful to search for all notes that link to the current note. You can use =org-occur-link-in-agenda-files= to search for backlinks to the current node.
 
 Unfortunately, out of the box this requires that the link description exactly match the title of the node. Here is an alternative solution that searchs for any backlink, no matter the description.
@@ -27,4 +29,18 @@ Unfortunately, out of the box this requires that the link description exactly ma
     (org-occur-in-agenda-files (regexp-quote link))))
 #+end_src
 
-Let's say you've created a note, but later want to *rename* it. Just rename it - the id should remain the same.
+If you use [[https://github.com/alphapapa/org-ql][org-ql]] you might prefer this:
+
+#+begin_src emacs-lisp :results silent
+(defun zorg-backlinks ()
+  (interactive)
+  (let* ((link (condition-case nil
+		  (org-id-store-link)
+	       (error "Unable to create a link to here")))
+             ;; (org-entry-get (point) "ID"))
+         (query `(link :target ,link)))
+    (org-ql-search
+      org-agenda-text-search-extra-files
+      query
+      :title (concat "Links to: " (org-get-heading t t)))))
+#+end_src
