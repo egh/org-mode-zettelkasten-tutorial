@@ -3,7 +3,7 @@
 :ID:       3eadd5d9-cf67-47d5-ae6b-6b6e213dcf95
 :END:
 
-Because all links are kept in plain text, it can be useful to search for all notes that link to the current note. You can use =org-occur-link-in-agenda-files= to search for backlinks to the current node.
+It can be useful to search for all notes that link to the current note. You can use =org-occur-link-in-agenda-files= to search for backlinks to the current node.
 
 Unfortunately, out of the box this requires that the link description exactly match the title of the node. Here is an alternative solution that searchs for any backlink, no matter the description.
 
