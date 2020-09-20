@@ -5,7 +5,7 @@ This is a tutorial for a Zettelkasten system based on pure Org mode. It is based
 Clone this repository and open file =START HERE.org= in Emacs to get started.
 
 #+begin_src
-git clone https://github.com/egh/zd-tutorial
+git clone https://github.com/egh/zettelkasten-tutorial
 #+end_src
 
 Comments and additions are more than welcome, via issues or pull requests.
