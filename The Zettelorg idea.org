@@ -1,4 +1,4 @@
-* The zettelorg idea                                              :zettelorg:
+* The zettelorg idea
 :PROPERTIES:
 :ID:       1f96e72a-9ba5-4b24-b191-120b80b38992
 :END:

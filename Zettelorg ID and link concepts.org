@@ -1,4 +1,4 @@
-* Zettelorg ID and link concepts                      :tutorial:zettelorg:
+* Zettelorg ID and link concepts                      :tutorial:
 :PROPERTIES:
 :ID:       117becf4-f5e7-4c91-8919-59d91b74a4e1
 :END:

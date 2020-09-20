@@ -1,4 +1,4 @@
-* Advanced Zettelorg features                        :zettelorg:tutorial:foo:
+* Advanced Zettelorg features                        :tutorial:foo:
 :PROPERTIES:
 :ID:       16a2419a-9838-44ae-abca-c385cb1f8db5
 :END:

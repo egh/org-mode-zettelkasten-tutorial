@@ -1,4 +1,4 @@
-* Search                                                 :zettelorg:tutorial:
+* Search                                                 :tutorial:
 :PROPERTIES:
 :ID:       8072f69e-53b1-4306-b458-1208e9468acd
 :END:

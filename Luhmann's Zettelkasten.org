@@ -1,4 +1,4 @@
-* Luhmann's Zettelkasten                                  :luhmann:zettelorg:
+* Luhmann's Zettelkasten                                  :luhmann:
 :PROPERTIES:
 :ID:       8a503f96-17b9-4b79-bfed-2355e01f9a49
 :END:
@@ -37,7 +37,7 @@ With physical notes, this link ID needs to be read and "manually" followed, whic
 Each note could link to others, but received itself a number to point out where it sprouted.
 A note going from =1= to =2= simply adds more information to its idea, but by adding an =a= and writing =1a= on a new slip of paper, it could branch out.
 The result is an intricate system of interlinked notes.
-** Exercise Zettelkasten on paper                                :zettelorg:
+** Exercise Zettelkasten on paper
 :PROPERTIES:
 :ID:       2f793f59-8d32-4b8c-857d-1ff9de858f5c
 :END:

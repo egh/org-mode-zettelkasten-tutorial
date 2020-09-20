@@ -1,4 +1,4 @@
-* What should go in your Zettelkasten            :tutorial:zettelorg:zk:todo:
+* What should go in your Zettelkasten            :tutorial:zk:todo:
 :PROPERTIES:
 :ID:       6f179296-97a8-4dd2-b7bc-f14beb744538
 :END:

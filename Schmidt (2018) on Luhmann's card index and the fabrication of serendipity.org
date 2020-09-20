@@ -1,4 +1,4 @@
-* Schmidt (2018) on Luhmann's card index and the fabrication of serendipity :luhmann:zettelorg:literature:
+* Schmidt (2018) on Luhmann's card index and the fabrication of serendipity :luhmann:literature:
 :PROPERTIES:
 :ID:       15dea09e-94ae-4800-acb6-9ce10c446a4b
 :END:

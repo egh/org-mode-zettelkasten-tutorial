@@ -1,4 +1,4 @@
-* Start here                                         :tutorial:zettelorg:
+* Start here                                         :tutorial:
 :PROPERTIES:
 :ID:       b9c8bf44-3980-4026-8737-cc546a166d31
 :END:
