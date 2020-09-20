@@ -3,7 +3,7 @@
 :ID:       8072f69e-53b1-4306-b458-1208e9468acd
 :END:
 
-Once you are familiar with the basics, [[id:a3e5b65f-b27c-460a-9cc0-e2b01de8b917][Zettelorg basic commands]] and [[id:117becf4-f5e7-4c91-8919-59d91b74a4e1][link concepts]], it is time to learn about search.
+Once you are familiar with the basics, [[id:a3e5b65f-b27c-460a-9cc0-e2b01de8b917][basic commands]] and [[id:117becf4-f5e7-4c91-8919-59d91b74a4e1][link concepts]], it is time to learn about search.
 
 You can use the standard search for a *tag* with =M-x org-tags-view=
 

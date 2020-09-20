@@ -25,8 +25,8 @@ The one keybinding you need to know to get started, is =C-c C-o= (or =org-open-a
 With this knowledge, you are ready to read on.
 
 You could
- - learn the [[id:a3e5b65f-b27c-460a-9cc0-e2b01de8b917][basic Zettelorg concepts]] 
- - look at [[id:117becf4-f5e7-4c91-8919-59d91b74a4e1][Zettelorg ID and link concepts]]
+ - learn the [[id:a3e5b65f-b27c-460a-9cc0-e2b01de8b917][basic concepts]] 
+ - look at [[id:117becf4-f5e7-4c91-8919-59d91b74a4e1][ID and link concepts]]
  - read about [[id:8072f69e-53b1-4306-b458-1208e9468acd][search]]
- - maybe read up on [[id:4c065f3d-7a2c-40b6-bb47-5fa2a4485f3e][Zettelorg history]]
+ - maybe read up on [[id:4c065f3d-7a2c-40b6-bb47-5fa2a4485f3e][History]]
  - learn about [[id:3eadd5d9-cf67-47d5-ae6b-6b6e213dcf95][Backlinks]]

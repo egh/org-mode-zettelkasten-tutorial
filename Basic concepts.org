@@ -1,11 +1,11 @@
-* Zettelorg basic concepts                               :tutorial:
+* Pure Org mode Zettelkasten basic concepts                        :tutorial:
 :PROPERTIES:
 :ID:       a3e5b65f-b27c-460a-9cc0-e2b01de8b917
 :END:
 
-To get started with Zettelorg, lets take a look at some basic commands.
+To get started with Org mode Zettelkasten, lets take a look at some basic commands.
 
-Create and edit new files in your zd-tutorial directory as you usually would. You can use org modes outlining features. To directly *open* one of the notes in your Zettelkasten, open a file as expected.
+Create and edit new files in your zettelkasten-tutorial directory as you usually would. You can use org modes outlining features. To directly *open* one of the notes in your Zettelkasten, open a file as expected.
 
 You can *create* a new note file with =C-x C-f= (=find-file=), or use =C-<return>= or =M-<return>= to create new headings in an existing file. If you want to set up a capture template to make this easier, you can and should.
 

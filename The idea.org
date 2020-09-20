@@ -1,15 +1,14 @@
-* The zettelorg idea
+* The Pure Org mode Zettelkaten idea
 :PROPERTIES:
 :ID:       1f96e72a-9ba5-4b24-b191-120b80b38992
 :END:
 
-Starting from =org-mode=, a Zettelkasten system needs:
+Starting from pure =org-mode=, a Zettelkasten system needs:
  - links between notes that are easy to make and easy to follow
  - a system for =tags= and a way to generate an index
+ - decent search
 
-What would be handy:
- - auto completion for links to other notes
- - a generated list of tags, perhaps with auto-completion
+The system should be enhanceable using small code blocks  out of the box org mode extensions (e.g. =org-ql=)
 
 Importantly, the Zettelkasten should
  - be human readable
