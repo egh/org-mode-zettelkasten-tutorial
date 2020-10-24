@@ -9,3 +9,10 @@ git clone https://github.com/egh/zettelkasten-tutorial
 #+end_src
 
 Comments and additions are more than welcome, via issues or pull requests.
+
+These notes are also accessible as HTML at [[https://efls.github.io/zd-tutorial]].
+
+More information in
+ - an [[https://www.eliasstorms.net/zetteldeft][introduction to Zetteldeft]]
+ - the [[https://github.com/EFLS/zetteldeft][Zetteldeft repository]]
+
