@@ -1,0 +1,29 @@
+* Exporting with org-publish
+Exporting notes is one way to conveniently read them outside of Emacs. Org mode provides functions to conveniently export notes.
+
+Exporting relies on Org mode and the =org-publish= functions. This configuration will publish to a =docs/= subdirectory in this project as HTML
+
+#+begin_src emacs-lisp :results silent
+(add-to-list
+ 'org-publish-project-alist
+ `("zd-tutorial"
+   :base-directory ,default-directory
+   :publishing-directory ,(expand-file-name "docs" default-directory)
+   ;; publishing configuration
+   :publishing-function org-html-publish-to-html
+   ;; org config
+   :headline-levels 4
+   :with-toc nil
+   :with-date nil
+   :with-author nil
+   :html-head-extra "<link rel='stylesheet' href='static/style.css' type='text/css'/>\n"
+   :html-head-extra nil
+   ))
+#+end_src
+
+Some pointers for people unfamiliar with Org-publish:
+ - =:publishing-directory= should be where you want your final notes to go
+ - =:html-head-extra= can be used to include styling
+
+The Org exporting features will try to resolve all Org style links and halt if deems one is broken.
+To still be able to export, it is a good idea to set =org-export-with-broken-links= to =t=.
