@@ -7,7 +7,7 @@ There are a number of different add on search methods that you can use to search
 :END:
 [[https://github.com/Wilfred/deadgrep][deadgrep]] uses the fast search program [[https://github.com/BurntSushi/ripgrep][ripgrep]] under the hood to quickly search a collection. Here is an example of how to store links from the search results page using deadgrep.
 
-#+begin_src emacs-lisp
+#+begin_src emacs-lisp :results silent
 (org-link-set-parameters "id" :store '(zorg-deadgrep-id-store-link zorg-ivy-occur-id-store-link))
 (defun zorg-deadgrep-id-store-link ()
   (if (derived-mode-p 'deadgrep-mode)
@@ -19,7 +19,7 @@ There are a number of different add on search methods that you can use to search
 ** Counsel and ripgrep/ag/ack
 [[https://github.com/abo-abo/swiper][Counsel]] provides emacs commands using the “ivy” completion mechanism. You can use this in conjunction with ag/ripgrep/ack (search tools) to search your Zettelkasten. If you like, you can use the following code store links from your search results:
 
-#+begin_src emacs-lisp
+#+begin_src emacs-lisp :results silent
 (org-link-set-parameters "id" :store #'zorg-ivy-occur-id-store-link)
 (defun zorg-ivy-occur-id-store-link ()
   (if (derived-mode-p 'ivy-occur-grep-mode)
@@ -30,7 +30,7 @@ There are a number of different add on search methods that you can use to search
 
 Use =counsel-rg= (or equivalent for your preferred search system), enter a search term, then use =C-c C-o= to open an “occur” buffer. From there you can use =C-c l= to store links and insert them later.
 
-#+begin_src emacs-lisp
+#+begin_src emacs-lisp :results silent
 (defvar zorg-id-store-link-functions ())
 
 (defun zorg-id-store-link ()

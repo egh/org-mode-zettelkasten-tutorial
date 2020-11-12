@@ -5,7 +5,7 @@
 
 There's more advanced features to explore!
 
-#+begin_src emacs-lisp
+#+begin_src emacs-lisp :results silent
 (require 'find-lisp)
 (add-to-list 'org-agenda-text-search-extra-files
               (find-lisp-find-files default-directory ".org"))
@@ -23,6 +23,6 @@ There's more advanced features to explore!
 #+end_src
 
 To ensure that tag completion includes all possible tags, set:
-#+begin_src emacs-lisp
+#+begin_src emacs-lisp :results silent
 (setq org-complete-tags-always-offer-all-agenda-tags t)
 #+end_src
