@@ -9,6 +9,8 @@ Create and edit new files in your zettelkasten-tutorial directory as you usually
 
 You can *create* a new note file with =C-x C-f= (=find-file=), or use =C-<return>= or =M-<return>= to create new headings in an existing file. If you want to set up a capture template to make this easier, you can and should.
 
+Let's say you've created a note, but later want to *rename* it. Just rename it - the id should remain the same.
+
 Tag entries using the usual org way, =C-c C-c= in a headline.
 
 To learn about linking between entries, click [[id:117becf4-f5e7-4c91-8919-59d91b74a4e1][here]]

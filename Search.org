@@ -13,4 +13,3 @@ From either of these results pages, you can use =C-c l= to store links, which yo
 
 You can also search for test using =M-x org-occur-in-agenda-files=. This will be faster than =org-search-view= but you cannot easily extract links from it in the same way.
 
-Let's say you've created a note, but later want to *rename* it. Just rename it - the id should remain the same.
