@@ -13,3 +13,13 @@ From either of these results pages, you can use =C-c l= to store links, which yo
 
 You can also search for test using =M-x org-occur-in-agenda-files=. This will be faster than =org-search-view= but you cannot easily extract links from it in the same way.
 
+If you use =org-ql=, the following code snippet might be useful. Out of the box, =org-ql-search= will not search =org-agenda-files-text-search-files=. This method will 
+
+#+begin_src emacs-lisp :results silent
+(defun zorg-ql-search (query narrow)
+  "Search `org-agenda-text-search-extra-files' with `org-ql-search'."
+  (interactive (list (read-string "Query: " (when org-ql-view-query
+                                              (format "%S" org-ql-view-query)))
+                     (or org-ql-view-narrow (eq current-prefix-arg '(4)))))
+  (org-ql-search org-agenda-text-search-extra-files query :sort '(date) :super-groups nil :narrow narrow))
+#+end_src
