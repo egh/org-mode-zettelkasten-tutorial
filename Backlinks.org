@@ -31,3 +31,25 @@ If you use [[https://github.com/alphapapa/org-ql][org-ql]] you might prefer this
       query
       :title (concat "Links to: " (org-get-heading t t)))))
 #+end_src
+
+If you use [[https://github.com/alphapapa/org-ql][org-ql]] and you want to maintain a [[https://orgmode.org/manual/Dynamic-Blocks.html][dynamic block]] of backlinks, you can use this:
+
+#+begin_src emacs-lisp :results silent
+(defun org-dblock-write:zorg-backlinks (&rest params)
+  (let ((elements (org-ql-query
+                    :from org-agenda-text-search-extra-files
+                    :where `(link :target ,(org-id-store-link)))))
+    (dolist (element elements)
+      (insert (org-make-link-string (concat "id:" (org-element-property :ID element))
+                                    (org-element-property :raw-value element))
+              "\n"))
+    (delete-char -1)))
+#+end_src
+
+You can then add dynamic blocks:
+
+#+begin: zorg-backlinks
+[[id:b9c8bf44-3980-4026-8737-cc546a166d31][Start here]]
+#+end
+
+These can be updated using =C-c C-c= on the block. For other options to keep the blocks up to date, see the [[https://orgmode.org/manual/Dynamic-Blocks.html][documentation]].
