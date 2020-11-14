@@ -8,8 +8,8 @@ First, you will need to add this directory to =org-agenda-files-text-search-file
 
 #+begin_src emacs-lisp :results silent
 (require 'find-lisp)
-(setq org-agenda-text-search-extra-files
-      (find-lisp-find-files default-directory "\\.org"))
+(mapcar (lambda (elt) (add-to-list 'org-agenda-text-search-extra-files elt))
+        (find-lisp-find-files default-directory "\\.org"))
 #+end_src
 
 The following code allows you to use =id= based links. This ensures that your links between things are stable even if you rename files or change headlines. If you already have a files in your agenda this could take some time as the id index is updated. Going forward, the index should be maintained as you add entries, so this should be a one time cost.
