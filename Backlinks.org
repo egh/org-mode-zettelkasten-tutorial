@@ -25,7 +25,6 @@ If you use [[https://github.com/alphapapa/org-ql][org-ql]] you might prefer this
   (let* ((link (condition-case nil
 		  (org-id-store-link)
 	       (error "Unable to create a link to here")))
-             ;; (org-entry-get (point) "ID"))
          (query `(link :target ,link)))
     (org-ql-search
       org-agenda-text-search-extra-files
