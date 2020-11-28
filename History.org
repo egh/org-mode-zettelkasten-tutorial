@@ -1,3 +1,4 @@
+#+TITLE: History
 * Org mode Zettelkasten history
 :PROPERTIES:
 :ID:       4c065f3d-7a2c-40b6-bb47-5fa2a4485f3e

@@ -1,4 +1,5 @@
-* Luhmann's Zettelkasten                                  :luhmann:
+#+TITLE Luhmann’s Zettelkasten
+* Luhmann’s Zettelkasten                                  :luhmann:
 :PROPERTIES:
 :ID:       8a503f96-17b9-4b79-bfed-2355e01f9a49
 :END:

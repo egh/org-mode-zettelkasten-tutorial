@@ -1,3 +1,4 @@
+#+TITLE: Pure Org mode Zettelkasten basic concepts
 * Pure Org mode Zettelkasten basic concepts                        :tutorial:
 :PROPERTIES:
 :ID:       a3e5b65f-b27c-460a-9cc0-e2b01de8b917

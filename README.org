@@ -1,3 +1,5 @@
+#+TITLE: README
+#+EXPORT_FILE_NAME: index
 * README
 
 This is a tutorial for a Zettelkasten system based on pure Org mode. It is based on the excellent [[https://github.com/EFLS/zd-tutorial][Zetteldeft tutorial]]. I have rewritten a lot, but the original concepts and a lot of the original text are from the guide to [[https://github.com/EFLS/zetteldeft][Zetteldeft]].

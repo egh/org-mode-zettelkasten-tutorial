@@ -1,3 +1,4 @@
+#+TITLE: Exporting with org-publish
 * Exporting with org-publish
 Exporting notes is one way to conveniently read them outside of Emacs. Org mode provides functions to conveniently export notes.
 
