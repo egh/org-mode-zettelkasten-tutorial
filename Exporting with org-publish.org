@@ -6,7 +6,7 @@ Exporting relies on Org mode and the =org-publish= functions. This configuration
 #+begin_src emacs-lisp :results silent
 (add-to-list
  'org-publish-project-alist
- `("zd-tutorial"
+ `("org-mode-zettelkasten-tutorial"
    :base-directory ,default-directory
    :publishing-directory ,(expand-file-name "docs" default-directory)
    ;; publishing configuration
