@@ -16,7 +16,7 @@ The other way to insert a link is to use =C-c C-l= without first storing a link.
   "Create an id: link using completion."
   (concat "id:" (org-id-get-with-outline-path-completion org-refile-targets)))
 
-(add-to-list 'org-refile-targets '(org-agenda-files :maxlevel . 2))
+(add-to-list 'org-agenda-text-search-extra-files '(org-agenda-files :maxlevel . 2))
 #+end_src
 
 Now you can type =C-c C-l=, then =id:=, then select from entries in your Zettelkasten via the completion mechanism.
