@@ -4,21 +4,20 @@ Exporting notes is one way to conveniently read them outside of Emacs. Org mode 
 Exporting relies on Org mode and the =org-publish= functions. This configuration will publish to a =docs/= subdirectory in this project as HTML
 
 #+begin_src emacs-lisp :results silent
-(add-to-list
- 'org-publish-project-alist
- `("org-mode-zettelkasten-tutorial"
-   :base-directory ,default-directory
+(setf
+ (alist-get "org-mode-zettelkasten-tutorial" org-publish-project-alist nil nil #'equal)
+ `(:base-directory ,default-directory
    :publishing-directory ,(expand-file-name "docs" default-directory)
    ;; publishing configuration
    :publishing-function org-html-publish-to-html
    ;; org config
+   :section-numbers nil
    :headline-levels 4
    :with-toc nil
    :with-date nil
    :with-author nil
    :html-head-extra "<link rel='stylesheet' href='static/style.css' type='text/css'/>\n"
-   :html-head-extra nil
-   ))
+   :html-head-extra nil))
 #+end_src
 
 Some pointers for people unfamiliar with Org-publish:
