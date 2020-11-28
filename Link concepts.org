@@ -27,6 +27,6 @@ Now you can type =C-c C-l=, then =id:=, then select from entries in your Zettelk
 :END:
 A few commands to help you navigate links include:
 
-- `C-c C-x C-p` :: move to the previous link in the document
-- `C-c C-x C-n` :: move to the next link in the document
-- `C-c &` :: go back to the previous place you were
+- =C-c C-x C-p= :: move to the previous link in the document
+- =C-c C-x C-n= :: move to the next link in the document
+- =C-c &= :: go back to the previous place you were
