@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-11-28 Sat 17:59 -->
+<!-- 2020-11-28 Sat 18:05 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Backlinks</title>
@@ -267,9 +267,10 @@ If you use <a href="https://github.com/alphapapa/org-ql">org-ql</a> and you want
   <span style="color: #7388D6;">(</span><span style="color: #0000FF;">let</span> <span style="color: #909183;">(</span><span style="color: #709870;">(</span>elements <span style="color: #907373;">(</span>org-ql-query
                     <span style="color: #006FE0;">:from</span> org-agenda-text-search-extra-files
                     <span style="color: #006FE0;">:where</span> `<span style="color: #6276BA;">(</span>link <span style="color: #006FE0;">:target</span> ,<span style="color: #858580;">(</span>org-id-store-link<span style="color: #858580;">)</span><span style="color: #6276BA;">)</span><span style="color: #907373;">)</span><span style="color: #709870;">)</span><span style="color: #909183;">)</span>
+    <span style="color: #909183;">(</span>insert <span style="color: #008000;">"Backlinks:\n"</span><span style="color: #909183;">)</span>
     <span style="color: #909183;">(</span><span style="color: #0000FF;">dolist</span> <span style="color: #709870;">(</span>element elements<span style="color: #709870;">)</span>
-      <span style="color: #709870;">(</span>insert <span style="color: #907373;">(</span>org-make-link-string <span style="color: #6276BA;">(</span>concat <span style="color: #008000;">"id:"</span> <span style="color: #858580;">(</span>org-element-property <span style="color: #006FE0;">:ID</span> element<span style="color: #858580;">)</span><span style="color: #6276BA;">)</span>
-                                    <span style="color: #6276BA;">(</span>org-element-property <span style="color: #006FE0;">:raw-value</span> element<span style="color: #6276BA;">)</span><span style="color: #907373;">)</span>
+      <span style="color: #709870;">(</span>insert <span style="color: #008000;">"- "</span> <span style="color: #907373;">(</span>org-make-link-string <span style="color: #6276BA;">(</span>concat <span style="color: #008000;">"id:"</span> <span style="color: #858580;">(</span>org-element-property <span style="color: #006FE0;">:ID</span> element<span style="color: #858580;">)</span><span style="color: #6276BA;">)</span>
+                                         <span style="color: #6276BA;">(</span>org-element-property <span style="color: #006FE0;">:raw-value</span> element<span style="color: #6276BA;">)</span><span style="color: #907373;">)</span>
               <span style="color: #008000;">"\n"</span><span style="color: #709870;">)</span><span style="color: #909183;">)</span>
     <span style="color: #909183;">(</span>delete-char -1<span style="color: #909183;">)</span><span style="color: #7388D6;">)</span><span style="color: #707183;">)</span>
 </pre>
@@ -280,8 +281,11 @@ You can then add dynamic blocks:
 </p>
 
 <p>
-<a href="START HERE.html#ID-b9c8bf44-3980-4026-8737-cc546a166d31">Start here</a>
+Backlinks:
 </p>
+<ul class="org-ul">
+<li><a href="START HERE.html#ID-b9c8bf44-3980-4026-8737-cc546a166d31">Start here</a></li>
+</ul>
 
 <p>
 These can be updated using <code>C-c C-c</code> on the block. For other options to keep the blocks up to date, see the <a href="https://orgmode.org/manual/Dynamic-Blocks.html">documentation</a>.
@@ -290,7 +294,7 @@ These can be updated using <code>C-c C-c</code> on the block. For other options 
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Created: 2020-11-28 Sat 17:59</p>
+<p class="date">Created: 2020-11-28 Sat 18:05</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
