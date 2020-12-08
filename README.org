@@ -4,7 +4,7 @@
 
 This is a tutorial for a Zettelkasten system based on pure Org mode. It is based on the excellent [[https://github.com/EFLS/zd-tutorial][Zetteldeft tutorial]]. I have rewritten a lot, but the original concepts and a lot of the original text are from the guide to [[https://github.com/EFLS/zetteldeft][Zetteldeft]].
 
-Clone this repository and open file =START HERE.org= in Emacs to get started. Or, if you are reading this online, click [[id:b9c8bf44-3980-4026-8737-cc546a166d31][here]].
+Clone this repository and open file =START HERE.org= in Emacs to get started. Or, read [[https://egh.github.io/org-mode-zettelkasten/][online]].
 
 #+begin_src
 git clone https://github.com/egh/org-mode-zettelkasten
