@@ -2,6 +2,8 @@
 #+EXPORT_FILE_NAME: index
 * README
 
+UPDATE: There is nothing wrong with this guide, and a lot that is good. But the main purpose of it, to use ordinary org mode structure rather than a single-file-per-node model, is now supported by [[https://www.orgroam.com/][org-roam]], and you may use that.
+
 This is a tutorial for a Zettelkasten system based on pure Org mode. It is based on the excellent [[https://github.com/EFLS/zd-tutorial][Zetteldeft tutorial]]. I have rewritten a lot, but the original concepts and a lot of the original text are from the guide to [[https://github.com/EFLS/zetteldeft][Zetteldeft]].
 
 Clone this repository and open file =START HERE.org= in Emacs to get started. Or, read [[https://egh.github.io/org-mode-zettelkasten/START HERE.html][online]].
